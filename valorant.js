@@ -47,5 +47,22 @@ function debutManche() {
     }
 }
     
+let manchesAttaquants = 0;
+let manchesDefenseurs = 0;
 
+while (manchesAttaquants < 13 && manchesDefenseurs < 13) {
+    debutManche();
+
+ if (random() < 0.5) {
+    manchesAttaquants++;
+} else {
+    manchesDefenseurs++;
+}
+}
+
+if (manchesAttaquants === 13) {
+console.log('Les Attaquants remportent la Game GG !');
+} else {
+console.log('Les Défenseurs remportent la Game GG !');
+}
 
