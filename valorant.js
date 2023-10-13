@@ -29,7 +29,7 @@ function debutManche() {
     const chanceAmorcage = equipeAleatoire === 'Défenseurs' ? 0.6 : 0.4;
     if (random() < chanceAmorcage) {
         console.log('Le spike est amorcé.');
-        const chanceDuel = 0.7;
+        
         const gagnant = duel('Attaquant', 'Défenseur');
         if (gagnant === 'Attaquant') {
             console.log('Les Attaquants gagnent la manche.');
